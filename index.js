@@ -60,9 +60,22 @@ const server = http.createServer((req, res) => {
 
 // http://localhost:8080/
 
+const main = () => {
+  // 퀴즈 풀기
+  function add(a, b) {
+    return a + b;
+  }
+
+  // 여기에 화살표 함수로 다시 작성하세요.
+  // const add =
+
+  console.log(add(5, 3)); // 예상 결과: 8
+};
+
 server.listen(8000, () => {
   console.log("서버 ON");
   console.log("🚀 __dirname:", __dirname);
+  main();
 });
 
 // 정적파일 서빙
